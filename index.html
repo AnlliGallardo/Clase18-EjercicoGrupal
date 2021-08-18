@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- DCN Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style/style.css">
     <title>Distancia Paises</title>
 </head>
 <body>
@@ -59,19 +61,18 @@
             </tbody>        
         </table>
     
-        <id class="container">
-           
-            <button id="btn_enviar_evaluacion">Enviar</button>
-            <button id="btn_ordenar_valores">Ordernar Valores</button>
-            <button id="btn_filtar_distancia">Filtrar</button>
-            <button id="btn_buscar_pais">Buscar</button>
-    
+        <id class="container"  class="is-flex">
+           <div class="column btns">
+               <button id="btn_enviar_evaluacion" class="button is-success is-rounded">Enviar</button>
+               <button id="btn_ordenar_valores" class="button is-success is-rounded">Ordernar Valores</button>
+               <button id="btn_filtar_distancia" class="button is-success is-rounded">Filtrar</button>
+               <button id="btn_buscar_pais" class="button is-success is-rounded">Buscar</button>
+           </div>
             
         </div>
 
     </main>
 
-        <script src="js/script.js" type="module"></script>
-    <script src="index.js" type="module"> </script>
+    <script src="script/index.js" type="module"> </script>
 </body>
 </html>

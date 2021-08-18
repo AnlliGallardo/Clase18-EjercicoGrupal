@@ -7,4 +7,4 @@ class Paises{
     }
 }
 
-export default Paises; 
+export default Paises;

@@ -1,3 +1,8 @@
+body{
+    background-color: rgb(167, 161, 161);
+    height: 100vh;
+}
+
 .btns{
     background-color: rgb(243, 241, 241);
 }

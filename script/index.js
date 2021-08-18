@@ -68,11 +68,11 @@ let ordernarValores = (e) => {
 
     let copia2ArregloPaises = copiaArregloPaises.map(pais => pais);
 
-    console.log("********Arreglos ascendente***********")
+    console.log("***Arreglos ascendente****")
     console.log(copiArregloValores);
     console.log(copiaArregloPaises);
 
-    console.log("********Arreglos descendente***********")
+    console.log("***Arreglos descendente****")
     copiArregloValores.reverse();
     copia2ArregloPaises.reverse();
     console.log(copiArregloValores);

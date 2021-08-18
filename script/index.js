@@ -1,12 +1,12 @@
 import Paises from "./modulos/mOrdenamiento.js";
 
-var arregloValores;
+let arregloValores;
 let arregloDistancia;
 let arregloNombrePaises = [];
 let arregloPaises = [];
 let arregloTamanio = [];
 
-var enviarEvaluacion = (e) => {
+let enviarEvaluacion = (e) => {
 
     let inputs = [...document.querySelectorAll(".numeracion_paises")];
     let inputsD = [...document.querySelectorAll(".distancia_paises")];
@@ -17,17 +17,9 @@ var enviarEvaluacion = (e) => {
         return parseInt(input.value);
     });
 
-    arregloDistancia = inputsD.map((distancia) => {
-        return distancia.value;
-    });
-
-    arregloTamanio = inputsT.map((tamanio) => {
-        return tamanio.value;
-    });
-
-    arregloNombrePaises = inputsN.map((nombrePais) => {
-        return nombrePais.value;
-    });
+    arregloDistancia = inputsD.map((distancia)=>{
+        return parseInt(distancia.value);
+    })
 
 
     //Lenar arreglo Planeta
@@ -44,7 +36,7 @@ var enviarEvaluacion = (e) => {
     }
 
     console.log(arregloPaises);
-    alert("Arreglo creado correctamente");
+    console.log("Datos procesados");
 }
 
 let ordernarValores = (e) => {
@@ -88,9 +80,9 @@ let filtrarDistancia = (e) => {
     );
 
     if (arregloFiltradoDistancia == undefined)
-        alert("No existe el pais");
+        console.log("No existe el pais");
     else
-        alert("Informacion del filtro",arregloFiltradoDistancia);
+        console.log("Informacion del filtro",arregloFiltradoDistancia);
         console.log(arregloFiltradoDistancia)
 
 }
@@ -102,9 +94,9 @@ let buscarPais = (e) => {
     console.log(r)
 
     if (r == undefined)
-        alert("No existe el pais");
+        console.log("No existe el pais");
     else
-        alert("El pais si existe");
+        console.log("El pais si existe");
 }
 
 document.querySelector("#btn_enviar_evaluacion").addEventListener("click", enviarEvaluacion);
